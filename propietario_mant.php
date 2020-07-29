@@ -42,7 +42,7 @@
     </div>
     <div class="panel-body">
         <p>
-            <a href="#" class="btn btn-success pull-left"> Nuevo </a>
+            <a href="propietario_crear.php" class="btn btn-success pull-left"> Nuevo </a>
         </p>
         <br>
         <hr>
@@ -79,9 +79,7 @@
         </table>
 
     </div>
-    <div class="panel-footer">
-        <p>Clase de Diseño de Sistemas | @mangusoftrd</p>
-    </div>
+
 </div> <!-- Fin del Panel -->
 
 <?php

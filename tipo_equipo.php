@@ -81,9 +81,7 @@
         </table>
 
     </div>
-    <div class="panel-footer">
-        <p>Clase de Diseño de Sistemas | @mangusoftrd</p>
-    </div>
+
 </div> <!-- Fin del Panel -->
 
 <?php
