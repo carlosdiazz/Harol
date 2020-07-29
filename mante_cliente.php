@@ -1,5 +1,35 @@
 <?php
     include('php/pcabeza.php');
+
+    $mensaje='';
+    $color='';
+
+    if (isset($_GET['s'])) {
+      
+      switch ($_GET['s']) {
+
+        case 'successdlt':
+          $mensaje = 'Registro Inaahabilitrado';
+          $color = 'success';
+          break;
+
+          case 'errordlt':
+            $mensaje = 'Imposible hay un error';
+            $color = 'danger';
+            break;
+      }
+    }
+
+    if(!empty($mensaje)and !empty($color)){
+      echo '<div class="alert alert-'.$color.'" role="alert">'.$mensaje.'
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      
+      </div> ';
+    
+     
+  }
+
+
 ?>
 <!-- Opciones de Navegación -->
 <ol class="breadcrumb">

@@ -21,7 +21,10 @@
     }
 
     if(!empty($mensaje)and !empty($color)){
-      echo '<div class="alert alert-'.$color.'" role="alert">'.$mensaje.'</div> ';
+      echo '<div class="alert alert-'.$color.'" role="alert">'.$mensaje.'
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      
+      </div> ';
     
      
   }
