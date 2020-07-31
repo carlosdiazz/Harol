@@ -8,7 +8,7 @@
       
       switch ($_GET['s']) {
 
-        case 'successdins':
+        case 'successins':
             $mensaje = 'Registro almacendado correctamete';
             $color = 'success';
             break;
