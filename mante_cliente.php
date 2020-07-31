@@ -8,12 +8,33 @@
       
       switch ($_GET['s']) {
 
+
+        case 'successins':
+            $mensaje = 'Registro almacendado correctamete';
+            $color = 'success';
+            break;
+  
+        case 'errorins':
+            $mensaje = 'Imposible almacenar el registro';
+            $color = 'danger';
+            break;
+
+        case 'successudt':
+            $mensaje = 'Registro actualizado correctamete';
+            $color = 'success';
+            break;
+          
+        case 'errorudt':
+            $mensaje = 'Imposible actualizar el registro';
+            $color = 'danger';
+            break;
+
         case 'successdlt':
           $mensaje = 'Registro Inaahabilitrado';
           $color = 'success';
           break;
 
-          case 'errordlt':
+        case 'errordlt':
             $mensaje = 'Imposible hay un error';
             $color = 'danger';
             break;
@@ -34,17 +55,17 @@
 <!-- Opciones de Navegación -->
 <ol class="breadcrumb">
     <li><a href="index.php">Inicio</a></li>
-    <li class="active">Mantenimientos Clientes</li>
+    <li class="active"> Clientes</li>
 </ol>
 
 <!-- Inicio de Panel de Detalles -->
 <div class="panel panel-default" style="margin-top: 10 px">
     <div class="panel-heading">
-        <h1>Mantenimientos Clientes</h1>
+        <h1>Listado de Clientes</h1>
     </div>
     <div class="panel-body">
         <p>
-            <a href="#" class="btn btn-success pull-left"> Nuevo </a>
+            <a href="cliente_crear.php" class="btn btn-success pull-left"> Nuevo </a>
         </p>
         <br>
         <hr>
@@ -74,7 +95,7 @@
                                 <td>".$row['experiencia']."</td>
                                 <td>".$row['estado']."</td>
 
-                                <td> <a data-toggle='tooltip' title='Editar' href='#' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
+                                <td> <a data-toggle='tooltip' title='Editar' href='cliente_editar.php?id=".base64_encode($row['codcliente'])."' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
                                 <td> <a data-toggle='tooltip' title='Anular' href='php/registro_clientes.php?accion=DLT&id=".$row['codcliente']."' class='btn btn-danger'> <img src='img/basura.png' width=34px /> </a></td>
                         ";
                     }

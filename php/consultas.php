@@ -11,6 +11,12 @@
 		return $result=$mysqli->query($sql); 
 	}
 
+	function extraer_cliente($id){		
+		include('conexion.php');	
+		$sql="SELECT * FROM clientes WHERE codcliente = '$id'";
+		return $result=$mysqli->query($sql); 
+	}
+
 	function lista_cliente(){		
 		include('conexion.php');	
 		$sql="SELECT * FROM clientes";

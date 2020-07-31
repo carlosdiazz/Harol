@@ -57,7 +57,7 @@
           <!-- <i class="fas fa-users"></i>  -->
           <li><a href="propietario_mant.php">Propietarios</a></li>
 
-          <li><a href="mante_cliente.php">Mantenimiento Clientes</a></li>
+          <li><a href="mante_cliente.php">Clientes</a></li>
 
           <li><a href="tipo_mantenimiento.php">Tipo Mantenimiento </a></li>
 
@@ -68,7 +68,7 @@
 
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="mailto:info@mangusoft.com">Contacto</a></li>
+          <li><a href="mailto:c.diazadriann@gmail.com">Contacto</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
