@@ -18,6 +18,15 @@
             $color = 'danger';
             break;
         
+        case 'successudt':
+            $mensaje = 'Registro actualizado correctamete';
+            $color = 'success';
+            break;
+      
+        case 'errorudt':
+            $mensaje = 'Imposible actualizar el registro';
+            $color = 'danger';
+            break;
         
         case 'successdlt':
           $mensaje = 'Registro Inaahabilitrado';
@@ -78,7 +87,7 @@
                                 <td>".$row['nombre']."</td>
                                 <td>".$row['direccion']."</td>
                                 <td>".$row['estado']."</td>
-                                <td> <a data-toggle='tooltip' title='Editar' href='propietario_editar.php?id=".$row['codpropietario']."' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
+                                <td> <a data-toggle='tooltip' title='Editar' href='propietario_editar.php?id=".base64_encode($row['codpropietario'])."' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
                                 <td> <a data-toggle='tooltip' title='Anular' href='php/propietario_registros.php?accion=DLT&id=".$row['codpropietario']."' class='btn btn-danger'> <img src='img/basura.png' width=34px /> </a></td>
                         ";
                     }

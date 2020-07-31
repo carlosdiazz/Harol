@@ -1,6 +1,6 @@
 <?php
     include 'php/pcabeza.php';
-    $query = extraer_propietario($_GET['id']);
+    $query = extraer_propietario(base64_decode($_GET['id']));
     $row = $query -> fetch_assoc();
 
 ?>
@@ -23,8 +23,30 @@
     <div class="panel-body">
         
         
-        <form action="php/propietario_registros.php?accion=INS" method ="POST">
+        <form action="php/propietario_registros.php?accion=UDT" method ="POST">
         <div class="row">
+            
+            
+            <div class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 col-lg-4 col-lg-offset-2 col-xs-12 col-xs-offset-0">
+                
+                <div class="form-group">
+                <label class="control-label"> Codigo: </label>
+                <input type="text" name="codigo" id="codigo" require="" readonly="" class="form-control"  " value="<?php echo $row['codpropietario'] ?>">
+                </div>
+            </div>
+
+            <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
+                
+                <div class="form-group">
+                <label class="control-label"> Estado: </label>
+                <select class="form-control " name="estado" id="estado">
+                    <option value="A" <?php if($row['estado'] == "A"){echo "selected";} ?>  >Activo</option>
+                    <option value="I" <?php if($row['estado'] == "I"){echo "selected";} ?>  >Inactivo</option>
+                </select>
+
+                </div>
+            </div>
+            
             
             <div class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 col-lg-4 col-lg-offset-2 col-xs-12 col-xs-offset-0">
                 
@@ -66,7 +88,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Experiencia: </label>
-                <textarea class="form-control"  name="experiencia" id="experiencia"> <?php echo $row['nombre'] ?> </textarea>
+                <textarea class="form-control"  name="experiencia" id="experiencia"> <?php echo $row['experiencia'] ?> </textarea>
 
                 </div>
             </div>
