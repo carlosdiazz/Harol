@@ -64,7 +64,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Experiencia: </label>
-                <textarea class="form-control"  name="experiencia" id="experiecnia"> Descripcion Experiencia </textarea>
+                <textarea class="form-control"  name="experiencia" id="experiencia"> Descripcion Experiencia </textarea>
 
                 </div>
             </div>

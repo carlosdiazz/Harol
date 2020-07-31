@@ -8,12 +8,23 @@
       
       switch ($_GET['s']) {
 
+        case 'successdins':
+            $mensaje = 'Registro almacendado correctamete';
+            $color = 'success';
+            break;
+  
+        case 'errorins':
+            $mensaje = 'Imposible almacenar el registro';
+            $color = 'danger';
+            break;
+        
+        
         case 'successdlt':
           $mensaje = 'Registro Inaahabilitrado';
           $color = 'success';
           break;
 
-          case 'errordlt':
+        case 'errordlt':
             $mensaje = 'Imposible hay un error';
             $color = 'danger';
             break;

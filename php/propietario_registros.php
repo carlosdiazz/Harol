@@ -14,6 +14,7 @@ if (isset($_GET['id'])) {
 
 
 if ($i == 'INS'){
+    $msj        ="";
     $nombre     =$_POST['nombre'];
     $direccion  =$_POST['direccion'];
     $telefono   =$_POST['telefono'];
@@ -24,7 +25,7 @@ if ($i == 'INS'){
     
     INSERT INTO `propietario`
     (
-        `codpropietario`, 
+         
         `nombre`, 
         `direccion`,
         `telefeno`,
@@ -40,6 +41,7 @@ if ($i == 'INS'){
             '$fechaN',
             '$experiencia',
             'A'
+            )
     
     "; 
 
@@ -49,10 +51,11 @@ if ($i == 'INS'){
         $msj ='errorins';
     }
 
+    //echo ("Descripcion del error: " .mysqli_error($mysqli));
     header("Location: ../propietario_mant.php?s=".$msj);
 }
 
-//echo '.msj'
+
 
 if ($i == 'DLT') {    
     $sql="
