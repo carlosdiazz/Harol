@@ -78,7 +78,7 @@
                                 <td>".$row['nombre']."</td>
                                 <td>".$row['direccion']."</td>
                                 <td>".$row['estado']."</td>
-                                <td> <a data-toggle='tooltip' title='Editar' href='#' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
+                                <td> <a data-toggle='tooltip' title='Editar' href='propietario_editar.php?id=".$row['codpropietario']."' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
                                 <td> <a data-toggle='tooltip' title='Anular' href='php/propietario_registros.php?accion=DLT&id=".$row['codpropietario']."' class='btn btn-danger'> <img src='img/basura.png' width=34px /> </a></td>
                         ";
                     }

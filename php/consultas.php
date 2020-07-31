@@ -5,6 +5,12 @@
 		return $result=$mysqli->query($sql); 
 	}
 
+	function extraer_propietario($id){		
+		include('conexion.php');	
+		$sql="SELECT * FROM propietario WHERE codpropietario = '$id'";
+		return $result=$mysqli->query($sql); 
+	}
+
 	function lista_cliente(){		
 		include('conexion.php');	
 		$sql="SELECT * FROM clientes";
