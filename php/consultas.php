@@ -17,6 +17,12 @@
 		return $result=$mysqli->query($sql); 
 	}
 
+	function extraer_tipo_mantenimiento($id){		
+		include('conexion.php');	
+		$sql="SELECT * FROM tipo_mantenimiento WHERE codtipo_mant = '$id'";
+		return $result=$mysqli->query($sql); 
+	}
+
 	function lista_cliente(){		
 		include('conexion.php');	
 		$sql="SELECT * FROM clientes";

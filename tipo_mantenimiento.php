@@ -44,7 +44,7 @@
     </div>
     <div class="panel-body">
         <p>
-            <a href="#" class="btn btn-success pull-left"> Nuevo </a>
+            <a href="tipo_mantenimiento_crear.php" class="btn btn-success pull-left"> Nuevo </a>
         </p>
         <br>
         <hr>
@@ -69,7 +69,7 @@
                                 <td>".$row['estado']."</td>
 
                                 <td> <a data-toggle='tooltip' title='Editar' href='#' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
-                                <td> <a data-toggle='tooltip' title='Anular' href='php/tipo_manten.php?accion=DLT&id=".$row['codcliente']."' class='btn btn-danger'> <img src='img/basura.png' width=34px /> </a></td>
+                                <td> <a data-toggle='tooltip' title='Anular' href='php/tipo_manten.php?accion=DLT&id=".$row['codtipo_mant']."' class='btn btn-danger'> <img src='img/basura.png' width=34px /> </a></td>
                         ";
                     }
                 ?>

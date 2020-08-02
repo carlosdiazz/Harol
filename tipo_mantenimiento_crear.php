@@ -6,22 +6,22 @@
 
 <ol class="breadcrumb">
     <li><a href="index.php">Inicio</a></li>
-    <li><a href="mante_cliente.php">Listado de Clientes</a></li>
-    <li class="active">Nuevo Cliente</li>
+    <li><a href="tipo_mantenimiento.php">Listado de Tipos de Mantenimiento</a></li>
+    <li class="active">Nuevo Propietario</li>
 
 </ol>
 
 <!-- Inicio de Panel de Detalles -->
 <div class="panel panel-default" style="margin-top: 10 px">
     <div class="panel-heading">
-        <h1>Nuevo Cliente</h1>
+        <h1>Nuevo tipo de mantenimiento</h1>
     </div>
     
     
     <div class="panel-body">
         
         
-        <form action="php/registro_clientes.php?accion=INS" method ="POST">
+        <form action="php/propietario_registros.php?accion=INS" method ="POST">
         <div class="row">
             
             <div class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 col-lg-4 col-lg-offset-2 col-xs-12 col-xs-offset-0">
@@ -74,7 +74,7 @@
                 
                 <div class="form-group">
                 
-                <a href="mante_cliente.php" class="btn btn-danger">Atras</a>
+                <a href="propietario_mant.php" class="btn btn-danger">Atras</a>
                 <input type="submit" value="Guardar" class="btn btn-success">
 
                 </div>
