@@ -29,7 +29,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Descripcion: </label>
-                <textarea class="form-control"  name="descripcion" id="descripcion"> Descripcion del Mantenimiento </textarea>
+                <textarea class="form-control" minlength=3 name="descripcion" required id="descripcion"> Descripcion del Mantenimiento </textarea>
 
                 </div>
             </div>

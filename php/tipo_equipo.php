@@ -62,8 +62,8 @@ if ($i == 'UDT') {
     } else {
         $msj ='errorudt';
     }
-    //echo("Descripcion de Error: " .mysqli_error($mysqli));
-    header("Location: ../tipo_equipo.php?s=".$msj);
+    echo("Descripcion de Error: " .mysqli_error($mysqli));
+    //header("Location: ../tipo_equipo.php?s=".$msj);
 }
 
 

@@ -28,7 +28,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Nombre: </label>
-                <input type="text" name="nombre" id="nombre" require="" class="form-control" placeholder="Nombre y Apellido">
+                <input type="text" name="nombre" minlength=3 id="nombre" required class="form-control" placeholder="Nombre y Apellido">
 
                 </div>
             </div>
@@ -37,7 +37,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Direccion: </label>
-                <input type="text" name="direccion" id="direccion" require="" class="form-control" placeholder="Direccion">
+                <input type="text" name="direccion" minlength=3 id="direccion" required class="form-control" placeholder="Direccion">
 
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Telefono: </label>
-                <input type="tel" name="telefono" id="telefono" require="" class="form-control" placeholder="Telefono:  000-000-0000">
+                <input type="tel" name="telefono" minlength=3 id="telefono" required class="form-control" placeholder="Telefono:  000-000-0000">
 
                 </div>
             </div>
@@ -55,7 +55,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Fecha de Nacimiento: </label>
-                <input type="date" name="fechaN" id="fechaN" require="" class="form-control" >
+                <input type="date" name="fechaN" id="fechaN" required class="form-control" >
 
                 </div>
             </div>
@@ -64,7 +64,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Experiencia: </label>
-                <textarea class="form-control"  name="experiencia" id="experiencia"> Descripcion Experiencia </textarea>
+                <textarea class="form-control" minlength=3 required name="experiencia" id="experiencia"> Descripcion Experiencia </textarea>
 
                 </div>
             </div>

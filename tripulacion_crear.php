@@ -28,7 +28,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Nombre: </label>
-                <input type="text" name="nombre" id="nombre" require="" class="form-control" placeholder="Nombre y Apellido">
+                <input type="text" name="nombre" minlength=3 id="nombre" required class="form-control" placeholder="Nombre y Apellido">
 
                 </div>
             </div>
@@ -37,7 +37,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Direccion: </label>
-                <input type="text" name="direccion" id="direccion" require="" class="form-control" placeholder="Direccion">
+                <input type="text" name="direccion" minlength=3 id="direccion" required class="form-control" placeholder="Direccion">
 
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Telefono: </label>
-                <input type="tel" name="telefono" id="telefono" require="" class="form-control" placeholder="Telefono:  000-000-0000">
+                <input type="tel" name="telefono" minlength=3 id="telefono" required class="form-control" placeholder="Telefono:  000-000-0000">
 
                 </div>
             </div>
@@ -55,7 +55,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Numeros de Hora: </label>
-                <select class="form-control " name="num_horas" require="" id="num_horas" type="text">
+                <select class="form-control " name="num_horas" required id="num_horas" type="text">
                     <option value="2"   >2</option>
                     <option value="4"   >4</option>
                     <option value="6"   >6</option>
@@ -73,7 +73,7 @@
                 
                 <div class="form-group">
                 <label class="control-label"> Valor de la Hora: </label>
-                <select class="form-control " require="" name="valor_hora" id="valor_hora" type="text">
+                <select class="form-control " required name="valor_hora" id="valor_hora" type="text">
                     <option value="10"   >10</option>
                     <option value="15"   >15</option>
                     <option value="20"   >20</option>

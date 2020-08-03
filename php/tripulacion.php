@@ -45,8 +45,13 @@ if ($i == 'INS'){
     "; 
 
     if ($mysqli->query($sql)) {
+        
         $msj ='successins';
     } else {
+        $msj ='errorins';
+    }
+
+    if($nombre == ""){
         $msj ='errorins';
     }
 
