@@ -23,6 +23,14 @@
 		return $result=$mysqli->query($sql); 
 	}
 
+	function extraer_tipo_equipo($id){		
+		include('conexion.php');	
+		$sql="SELECT * FROM tipo_equipo WHERE codtipo_equipo  = '$id'";
+		return $result=$mysqli->query($sql); 
+	}
+
+
+	
 	function lista_cliente(){		
 		include('conexion.php');	
 		$sql="SELECT * FROM clientes";

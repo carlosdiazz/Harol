@@ -103,20 +103,4 @@ if ($i == 'DLT') {
 }
 
 
-if ($i == 'DLT') {    
-    $sql="
-    UPDATE `propietario` SET
-    `estado` = 'I'
-    WHERE `codpropietario` = '$codigo'
-    ";
-
-    if ($mysqli->query($sql)) {
-        $msj ='successdlt';
-    } else {
-        $msj ='errordlt';
-    }
-
-    header("Location: ../propietario_mant.php?s=".$msj);
-}
-
 ?>

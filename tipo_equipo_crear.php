@@ -6,8 +6,8 @@
 
 <ol class="breadcrumb">
     <li><a href="index.php">Inicio</a></li>
-    <li><a href="tipo_mantenimiento.php">Listado de Tipos de Mantenimiento</a></li>
-    <li class="active">Nuevo Propietario</li>
+    <li><a href="tipo_equipo.php">Listado de Tipos de Equipos</a></li>
+    <li class="active">Nuevo Equipo</li>
 
 </ol>
 
@@ -21,7 +21,7 @@
     <div class="panel-body">
         
         
-        <form action="php/tipo_manten.php?accion=INS" method ="POST">
+        <form action="php/tipo_equipo.php?accion=INS" method ="POST">
         <div class="row">
                     
            
@@ -39,7 +39,7 @@
                 
                 <div class="form-group">
                 
-                <a href="tipo_mantenimiento.php" class="btn btn-danger">Atras</a>
+                <a href="tipo_equipo.php" class="btn btn-danger">Atras</a>
                 <input type="submit" value="Guardar" class="btn btn-success">
 
                 </div>

@@ -8,15 +8,37 @@
       
       switch ($_GET['s']) {
 
+        case 'successins':
+            $mensaje = 'Registro almacendado correctamete';
+            $color = 'success';
+            break;
+  
+        case 'errorins':
+            $mensaje = 'Imposible almacenar el registro';
+            $color = 'danger';
+            break;
+        
+        
         case 'successdlt':
           $mensaje = 'Registro Inaahabilitrado';
           $color = 'success';
           break;
 
-          case 'errordlt':
+        case 'errordlt':
             $mensaje = 'Imposible hay un error';
             $color = 'danger';
             break;
+
+        case 'successudt':
+            $mensaje = 'Registro actualizado correctamete';
+            $color = 'success';
+            break;
+      
+        case 'errorudt':
+            $mensaje = 'Imposible actualizar el registro';
+            $color = 'danger';
+            break;
+
       }
     }
 
@@ -52,7 +74,7 @@
             <thead>
                 <tr>
                     <th>Código</th>
-                    <th>Dirección</th>
+                    <th>Descripcion</th>
                     <th>Estado</th>
                     <th></th>
                     <th></th>
@@ -68,7 +90,7 @@
                                 <td>".$row['descripcion']."</td>
                                 <td>".$row['estado']."</td>
 
-                                <td> <a data-toggle='tooltip' title='Editar' href='#' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
+                                <td> <a data-toggle='tooltip' title='Editar' href='tipo_mantenimiento_editar.php?id=".base64_encode($row['codtipo_mant'])."' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
                                 <td> <a data-toggle='tooltip' title='Anular' href='php/tipo_manten.php?accion=DLT&id=".$row['codtipo_mant']."' class='btn btn-danger'> <img src='img/basura.png' width=34px /> </a></td>
                         ";
                     }

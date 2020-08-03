@@ -8,6 +8,16 @@
       
       switch ($_GET['s']) {
 
+        case 'successins':
+            $mensaje = 'Registro almacendado correctamete';
+            $color = 'success';
+            break;
+  
+        case 'errorins':
+            $mensaje = 'Imposible almacenar el registro';
+            $color = 'danger';
+            break;
+        
         case 'successdlt':
           $mensaje = 'Registro Inaahabilitrado';
           $color = 'success';
@@ -17,6 +27,15 @@
             $mensaje = 'Imposible hay un error';
             $color = 'danger';
             break;
+        
+        case 'successudt':
+            $mensaje = 'Registro actualizado correctamete';
+            $color = 'success';
+            break;
+      
+        case 'errorudt':
+            $mensaje = 'Imposible actualizar el registro';
+            $color = 'danger';
       }
     }
 
@@ -33,17 +52,17 @@
 <!-- Opciones de Navegación -->
 <ol class="breadcrumb">
     <li><a href="index.php">Inicio</a></li>
-    <li class="active">Tipo Equipo</li>
+    <li class="active">Tipos de Equipos</li>
 </ol>
 
 <!-- Inicio de Panel de Detalles -->
 <div class="panel panel-default" style="margin-top: 10 px">
     <div class="panel-heading">
-        <h1>Tipo Equipo</h1>
+        <h1>Tipos de Equipos</h1>
     </div>
     <div class="panel-body">
         <p>
-            <a href="#" class="btn btn-success pull-left"> Nuevo </a>
+            <a href="tipo_equipo_crear.php" class="btn btn-success pull-left"> Nuevo </a>
         </p>
         <br>
         <hr>
@@ -60,7 +79,7 @@
             </thead>
             <tbody>
                 <?php
-                    $query = tripulacion();
+                    $query = tipo_equipo();
                     while ($row = $query->fetch_assoc()) {
                         echo"
                             <tr>
@@ -69,7 +88,7 @@
                                 <td>".$row['estado']."</td>
 
 
-                                <td> <a data-toggle='tooltip' title='Editar' href='#' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
+                                <td> <a data-toggle='tooltip' title='Editar' href='tipo_equipo_editar.php?id=".base64_encode($row['codtipo_equipo'])."' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
                                 <td> <a data-toggle='tooltip' title='Anular' href='php/tipo_equipo.php?accion=DLT&id=".$row['codtipo_equipo']."' class='btn btn-danger'> <img src='img/basura.png' width=34px /> </a></td>
                         ";
                     }

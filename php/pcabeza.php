@@ -61,9 +61,11 @@
 
           <li><a href="tipo_mantenimiento.php">Tipo Mantenimiento </a></li>
 
+          <li><a href="tipo_equipo.php">Tipo de Equipos </a></li>
+
           <li><a href="tripulacion.php">Tripulacion </a></li>
 
-          <li><a href="tipo_equipo.php">Tipo de Equipos </a></li>
+
         
 
         </ul>

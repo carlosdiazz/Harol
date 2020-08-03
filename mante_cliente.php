@@ -76,10 +76,9 @@
                     <th>Nombre</th>
                     <th>Dirección</th>
                     <th>Telefono</th>
-                   <!-- <th>Experiencia</th> -->
+                    <th>Experiencia</th> 
                     <th>Estado</th>
-                    <th></th>
-                    <th></th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -90,7 +89,7 @@
                             <tr>
                                 <td>".$row['codcliente']."</td>
                                 <td>".$row['nombre']."</td>
-                                
+                                <td>".$row['direccion']."</td>
                                 <td>".$row['telefeno']."</td>
                                 <td>".$row['experiencia']."</td>
                                 <td>".$row['estado']."</td>

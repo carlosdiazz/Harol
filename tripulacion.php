@@ -66,15 +66,15 @@
                     while ($row = $query->fetch_assoc()) {
                         echo"
                             <tr>
-                                <td>".$row['codtripulacion']."</td>
+                                <td>".$row['codtribulacion']."</td>
                                 <td>".$row['nombre']."</td>
                                 <td>".$row['direccion']."</td>
                                 <td>".$row['telefeno']."</td>
                                 <td>".$row['num_horas']."</td>
-                                <td>".$row['valor_horas']."</td>
+                                <td>".$row['valor_hora']."</td>
 
                                 <td> <a data-toggle='tooltip' title='Editar' href='#' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
-                                <td> <a data-toggle='tooltip' title='Anular' href='php/registro_clientes.php?accion=DLT&id=".$row['codtripulacion']."' class='btn btn-danger'> <img src='img/basura.png' width=34px /> </a></td>
+                               
                         ";
                     }
                 ?>
