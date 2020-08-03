@@ -29,6 +29,11 @@
 		return $result=$mysqli->query($sql); 
 	}
 
+	function extraer_tripulacion($id){		
+		include('conexion.php');	
+		$sql="SELECT * FROM tripulacion WHERE codtribulacion  = '$id'";
+		return $result=$mysqli->query($sql); 
+	}
 
 	
 	function lista_cliente(){		

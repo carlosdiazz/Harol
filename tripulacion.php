@@ -8,15 +8,25 @@
       
       switch ($_GET['s']) {
 
-        case 'successdlt':
-          $mensaje = 'Registro Inaahabilitrado';
-          $color = 'success';
-          break;
-
-          case 'errordlt':
-            $mensaje = 'Imposible hay un error';
+        case 'successins':
+            $mensaje = 'Registro almacendado correctamete';
+            $color = 'success';
+            break;
+  
+        case 'errorins':
+            $mensaje = 'Imposible almacenar el registro';
             $color = 'danger';
             break;
+
+        case 'successudt':
+            $mensaje = 'Registro actualizado correctamete';
+            $color = 'success';
+            break;
+          
+        case 'errorudt':
+            $mensaje = 'Imposible actualizar el registro';
+            $color = 'danger';
+            
       }
     }
 
@@ -43,7 +53,7 @@
     </div>
     <div class="panel-body">
         <p>
-            <a href="#" class="btn btn-success pull-left"> Nuevo </a>
+            <a href="tripulacion_crear.php" class="btn btn-success pull-left"> Nuevo </a>
         </p>
         <br>
         <hr>
@@ -73,7 +83,7 @@
                                 <td>".$row['num_horas']."</td>
                                 <td>".$row['valor_hora']."</td>
 
-                                <td> <a data-toggle='tooltip' title='Editar' href='#' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
+                                <td> <a data-toggle='tooltip' title='Editar' href='tripulacion_editar.php?id=".base64_encode($row['codtribulacion'])."' class='btn btn-primary'> <img src='img/editar.png' width=34px /> </a> </td>
                                
                         ";
                     }
